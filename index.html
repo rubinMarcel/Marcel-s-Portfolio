@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/16520ae2ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">ABOUT</a></li>   
+                    <li><a href="#">SERVICES</a></li>   
+                    <li><a href="#">CONTACTS</a></li>  
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+    <p>Hey there,<br></p>
+    <h1>I'm <span>Marcel</span><br>Rubin</h1>
+    <p>Computer Engineer </p>
+            </div> 
+        </div>
+    </div>
+    <!--------------about me------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/about.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Greetings! I'm Marcel E. Rubin, a dedicated technologist on a mission to reshape the digital landscape.
+                         I am deeply passionate about leveraging technology to create innovative solutions that make a real impact.
+                         Ever since childhood, my love affair with computers has been an unwavering journey of curiosity, exploration, and a genuine fascination for the endless possibilities that the digital world unfolds. From the first moment I laid hands on a keyboard,
+                          the allure of technology became a lifelong passion,
+                          propelling me to continually delve into the intricate realms of code, algorithms,
+                          and the boundless creativity that unfolds within the digital domain.</p>     
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <!------------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphics Design</h2>
+                    <p>Embarking on my graphic design journey, I have cultivated a versatile skill set that revolves around the Adobe Creative Suite, showcasing proficiency in Photoshop for meticulous image editing, Illustrator for intricate vector graphics, and InDesign for sophisticated layout design.         </p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>In the dynamic realm of web design, my skills encompass a comprehensive understanding of both the aesthetic and functional aspects of creating compelling online experiences. Proficient in HTML, CSS, and JavaScript, I bring to the table the ability to design responsive and visually engaging websites that seamlessly adapt to various screen sizes and devices.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Technical Support</h2>
+                    <p>I bring a robust skill set and a customer-focused approach to troubleshooting and problem resolution. Proficient in diagnosing and resolving technical issues, my expertise extends across various platforms and systems. I am adept at providing timely and effective support to end-users, whether it's hardware, software, or network-related challenges.</p>
+                        <a href="#">Learn More</a>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!----------------------contacts---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> @marcelrubin2gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09273987582</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/marcel.rubin.710"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+               </div>
+               <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024, Marcel's Portfolio. All Rights Reserved</p>
+        </div>
+    </div>
+<!-------------js for menu-------------------------->
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+     </script>
+    
+</body>
+</html>
